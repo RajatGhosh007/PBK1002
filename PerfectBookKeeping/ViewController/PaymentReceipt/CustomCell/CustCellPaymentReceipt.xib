@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CustCellPaymentReceipt" id="gTV-IL-0wX" customClass="CustCellPaymentReceipt" customModule="PerfectBookKeeping" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpE-qa-WOL">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAL-mi-yhN">
+                                <rect key="frame" x="2" y="2" width="176" height="76"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="receiptCellBG" translatesAutoresizingMaskIntoConstraints="NO" id="rmf-XO-eZZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="176" height="76"/>
+                                    </imageView>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_view_pdf" translatesAutoresizingMaskIntoConstraints="NO" id="zEa-8C-UF0">
+                                        <rect key="frame" x="143" y="5" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="28" id="EsY-MZ-5Io"/>
+                                            <constraint firstAttribute="height" constant="28" id="Xnt-er-uFT"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_download_pdf" translatesAutoresizingMaskIntoConstraints="NO" id="RTa-ve-0SX">
+                                        <rect key="frame" x="143" y="43" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="28" id="14K-Hp-rdR"/>
+                                            <constraint firstAttribute="height" constant="28" id="xqf-h1-YFy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XS000552" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3x-Sq-ngF">
+                                        <rect key="frame" x="10" y="57" width="156" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="yRO-0j-KRp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15thApril 2023 7:30 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4q2-KD-oMf">
+                                        <rect key="frame" x="10" y="5" width="156" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="shE-fL-eD7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount : 500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5D-gA-SAa">
+                                        <rect key="frame" x="99.666666666666686" y="31" width="66.333333333333314" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="1HI-Pw-aEG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="4q2-KD-oMf" firstAttribute="top" secondItem="qAL-mi-yhN" secondAttribute="top" constant="5" id="1JZ-uU-GSw"/>
+                                    <constraint firstAttribute="trailing" secondItem="RTa-ve-0SX" secondAttribute="trailing" constant="5" id="8li-kP-FAA"/>
+                                    <constraint firstAttribute="trailing" secondItem="n5D-gA-SAa" secondAttribute="trailing" constant="10" id="9UJ-DU-3tT"/>
+                                    <constraint firstAttribute="trailing" secondItem="zEa-8C-UF0" secondAttribute="trailing" constant="5" id="AuV-LW-nd2"/>
+                                    <constraint firstItem="4q2-KD-oMf" firstAttribute="trailing" secondItem="n5D-gA-SAa" secondAttribute="trailing" id="GYI-Gf-W1B"/>
+                                    <constraint firstAttribute="bottom" secondItem="RTa-ve-0SX" secondAttribute="bottom" constant="5" id="HaL-Wr-0QJ"/>
+                                    <constraint firstItem="zEa-8C-UF0" firstAttribute="top" secondItem="qAL-mi-yhN" secondAttribute="top" constant="5" id="KiA-Kn-c1v"/>
+                                    <constraint firstItem="rmf-XO-eZZ" firstAttribute="leading" secondItem="qAL-mi-yhN" secondAttribute="leading" id="L5O-cp-s6S"/>
+                                    <constraint firstAttribute="bottom" secondItem="D3x-Sq-ngF" secondAttribute="bottom" constant="5" id="QbQ-Ag-Z11"/>
+                                    <constraint firstAttribute="trailing" secondItem="rmf-XO-eZZ" secondAttribute="trailing" id="XOs-6o-AG7"/>
+                                    <constraint firstItem="4q2-KD-oMf" firstAttribute="leading" secondItem="D3x-Sq-ngF" secondAttribute="leading" id="Zxo-g8-XeP"/>
+                                    <constraint firstItem="rmf-XO-eZZ" firstAttribute="top" secondItem="qAL-mi-yhN" secondAttribute="top" id="bT5-1v-zvf"/>
+                                    <constraint firstItem="n5D-gA-SAa" firstAttribute="centerY" secondItem="qAL-mi-yhN" secondAttribute="centerY" id="fww-B2-iUC"/>
+                                    <constraint firstItem="4q2-KD-oMf" firstAttribute="height" secondItem="D3x-Sq-ngF" secondAttribute="height" id="jCC-h9-tjd"/>
+                                    <constraint firstItem="D3x-Sq-ngF" firstAttribute="leading" secondItem="qAL-mi-yhN" secondAttribute="leading" constant="10" id="lBw-T2-8Rt"/>
+                                    <constraint firstItem="D3x-Sq-ngF" firstAttribute="trailing" secondItem="n5D-gA-SAa" secondAttribute="trailing" id="quk-C2-6DO"/>
+                                    <constraint firstAttribute="bottom" secondItem="rmf-XO-eZZ" secondAttribute="bottom" id="vJp-l0-Xcl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qAL-mi-yhN" secondAttribute="trailing" constant="2" id="49l-VP-gBC"/>
+                            <constraint firstItem="qAL-mi-yhN" firstAttribute="top" secondItem="bpE-qa-WOL" secondAttribute="top" constant="2" id="Iu8-zW-DkD"/>
+                            <constraint firstAttribute="bottom" secondItem="qAL-mi-yhN" secondAttribute="bottom" constant="2" id="gqg-o7-egg"/>
+                            <constraint firstItem="qAL-mi-yhN" firstAttribute="leading" secondItem="bpE-qa-WOL" secondAttribute="leading" constant="2" id="s2R-OI-yxe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="bpE-qa-WOL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RGq-zZ-Ozp"/>
+                <constraint firstAttribute="bottom" secondItem="bpE-qa-WOL" secondAttribute="bottom" id="ZZF-lF-56h"/>
+                <constraint firstItem="bpE-qa-WOL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gYo-Em-cGz"/>
+                <constraint firstAttribute="trailing" secondItem="bpE-qa-WOL" secondAttribute="trailing" id="oAG-kO-81v"/>
+            </constraints>
+            <size key="customSize" width="310" height="85"/>
+            <connections>
+                <outlet property="lblAmount" destination="n5D-gA-SAa" id="bZJ-Yd-SEv"/>
+                <outlet property="lblDate" destination="4q2-KD-oMf" id="SaO-Af-ZJ3"/>
+                <outlet property="lblTransID" destination="D3x-Sq-ngF" id="d98-Za-bjZ"/>
+                <outlet property="viewContainer" destination="qAL-mi-yhN" id="2s6-2Y-44c"/>
+            </connections>
+            <point key="canvasLocation" x="175.57251908396947" y="-0.70422535211267612"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_download_pdf" width="244" height="273"/>
+        <image name="icon_view_pdf" width="290" height="302"/>
+        <image name="receiptCellBG" width="182" height="101"/>
+    </resources>
+</document>

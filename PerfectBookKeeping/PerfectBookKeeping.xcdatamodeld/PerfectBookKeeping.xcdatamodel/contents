@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AllCountryList" representedClassName=".AllCountryList" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="iso" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="nicename" optional="YES" attributeType="String"/>
+        <attribute name="numcode" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="phonecode" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CropUploadImageList" representedClassName="CropUploadImageList" syncable="YES">
+        <attribute name="bw_status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="company_id" optional="YES" attributeType="String"/>
+        <attribute name="file_date" optional="YES" attributeType="String"/>
+        <attribute name="file_name" optional="YES" attributeType="String"/>
+        <attribute name="file_path" optional="YES" attributeType="String"/>
+        <attribute name="for_upload" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="imageID" optional="YES" attributeType="String"/>
+        <attribute name="mime_type" optional="YES" attributeType="String"/>
+        <attribute name="snap_image" optional="YES" attributeType="String"/>
+        <attribute name="temp_snap_image" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="upload_status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="SateListStore" representedClassName=".SateListStore" syncable="YES">
+        <attribute name="state_abbr" optional="YES" attributeType="String"/>
+        <attribute name="state_id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="state_name" optional="YES" attributeType="String"/>
+    </entity>
+</model>

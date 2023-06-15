@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustCellCountryName" id="KGk-i7-Jjw" customClass="CustCellCountryName" customModule="PerfectBookKeeping" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e7m-NC-8zB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rajat " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6e2-Fj-G3X">
+                                <rect key="frame" x="10" y="10" width="300" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6e2-Fj-G3X" firstAttribute="top" secondItem="e7m-NC-8zB" secondAttribute="top" constant="10" id="7dv-nE-LLh"/>
+                            <constraint firstItem="6e2-Fj-G3X" firstAttribute="leading" secondItem="e7m-NC-8zB" secondAttribute="leading" constant="10" id="8zr-1m-sIi"/>
+                            <constraint firstAttribute="bottom" secondItem="6e2-Fj-G3X" secondAttribute="bottom" constant="10" id="MUR-ca-3Yj"/>
+                            <constraint firstAttribute="trailing" secondItem="6e2-Fj-G3X" secondAttribute="trailing" constant="10" id="UK7-AO-EYy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="e7m-NC-8zB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="INc-u8-kXU"/>
+                    <constraint firstItem="e7m-NC-8zB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cAX-pr-VlK"/>
+                    <constraint firstAttribute="trailing" secondItem="e7m-NC-8zB" secondAttribute="trailing" id="iZJ-ix-Daf"/>
+                    <constraint firstAttribute="bottom" secondItem="e7m-NC-8zB" secondAttribute="bottom" id="waw-U2-uSG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblDisplay" destination="6e2-Fj-G3X" id="ZiP-mV-P3J"/>
+            </connections>
+            <point key="canvasLocation" x="56.488549618320612" y="-11.267605633802818"/>
+        </tableViewCell>
+    </objects>
+</document>
